@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Click the button to demonstrate the fizzBuzz.</p>
+
+    <button onclick="fizzBuzz()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function fizzBuzz() {
+        let number = prompt("Please enter your number");
+        let result = "";
+        if (number >= 1 && number <= 100) {
+          if (number % 3 == 0 && number % 5 == 0) {
+            alert("FizzBuzz");
+          } else if (number % 3 == 0) {
+            alert("Fizz");
+          } else if (number % 5 == 0) {
+            alert("Buzz");
+          }
+        } else alert("Enter a number between 1-100!");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-size: 22px;
+    }
+
+    .list-items {
+      border: 2px solid tomato;
+      height: 300px;
+    }
+
+    button {
+      background-color: lightsalmon;
+      font-size: 20px;
+    }
+    ul {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Todo List</h1>
+  <div>
+    <button onclick="buttons.toggleAll()">Toggle All</button>
+  </div>
+
+  <div>
+    <input id="addTodoInput" type="text" onkeyup="todoList.stoppedTyping()">
+    <button id="disableButton" onclick="buttons.addTodo()">Add</button>
+  </div>
+
+  <div>
+    <button onclick="buttons.changeTodo()">Change To Do</button>
+    <input id="changeTodoPosition" type="number">
+    <input id="changeTodoText" type="text">
+  </div>
+
+  <div>
+    <button onclick="buttons.deleteTodo()">Delete</button>
+    <input id="deleteTodoPosition" type="number">
+  </div>
+
+  <div>
+    <button onclick="buttons.toggleCompleted()">Toggle Completed</button>
+    <input id="toggleCompletedPosition" type="number">
+  </div>
+
+  <div class="list-items">
+    <ul>
+
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

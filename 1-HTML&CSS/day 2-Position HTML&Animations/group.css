@@ -1,0 +1,132 @@
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  height: 150px;
+  padding: 15px;
+  background-color: tomato;
+  display: block;
+}
+
+.upper-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+.nav-links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover {
+  animation: movingIn 0.5s;
+}
+
+.lower-nav {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category-box {
+  background-color: tomato;
+  border-radius: 5px;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.category-box:hover {
+  animation: rotate 1s;
+  box-shadow: 5px 10px 8px #201f1f;
+  animation-fill-mode: forwards;
+}
+
+/*------------------------------ MAIN ----------------------------- */
+
+.container {
+  margin-left: 75px;
+  margin-right: 75px;
+  padding: 20px;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18rem;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.card:hover {
+  animation: movingIn 0.5s;
+}
+
+.big-card {
+  width: 37rem;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.big-card img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  background-color: tomato;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes movingIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}

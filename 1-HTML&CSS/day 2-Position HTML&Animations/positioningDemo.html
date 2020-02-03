@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Positioning</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>POSITIONING!!!</h1>
+      <div class="inner-container">
+        <div class="text-box box1">
+          <h2>static</h2>
+          <h2>(default position)</h2>
+        </div>
+        <div class="relative-box">
+          <div class="text-box box2">
+            <h2>absolute</h2>
+            <h4>
+              Positions itself according to the nearest parent that has a
+              position
+            </h4>
+          </div>
+        </div>
+        <div class="text-box box3">
+          <h2>relative</h2>
+          <h4>displaces the element relative to where originally was</h4>
+        </div>
+        <div class="text-box box4">
+          <h2>fixed</h2>
+          <h4>
+            basically what it says - fixed to the position within the browser
+          </h4>
+        </div>
+        <div class="text-box box5">
+          <h2>sticky</h2>
+          <h4>
+            fixed up until you scroll~
+          </h4>
+        </div>
+        <div class="padding-box"><h2>Random Padding</h2></div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    /* height: 100vh; */
+    background: lightblue;
+  }
+  .container {
+    box-sizing: border-box;
+    height: 100%;
+    width: 800px;
+    border: 2px solid black;
+    text-align: center;
+    background: pink;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .inner-container {
+    border: 2px solid white;
+    margin: 0 auto;
+  }
+  .text-box {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+  .box1 {
+    background: lightgreen;
+    margin-bottom: 20px;
+  }
+  /* .relative-box {
+  position: relative;
+  border: 2px solid black;
+  background: white;
+  height: 400px;
+} */
+  .box2 {
+    background: lightcoral;
+    margin-bottom: 20px;
+    /* position: absolute;
+  bottom: 20px;
+  right: 300px; */
+  }
+  .box3 {
+    background: lightyellow;
+    margin-bottom: 20px;
+    /* position: relative;
+  top: 100px;
+  left: 20px; */
+  }
+  .box4 {
+    background: lightseagreen;
+    margin-bottom: 20px;
+    /* position: fixed;
+  bottom: 500px;
+  left: 50px; */
+  }
+  .box5 {
+    background: yellow;
+    margin-bottom: 20px;
+    /* position: sticky;
+    top: 100px; */
+  }
+  .padding-box {
+    height: 800px;
+    background-color: blueviolet;
+  }
+  #image-container {
+    height: 800px;
+    background-color: burlywood;
+    padding: 100px;
+  }
+  #image-example {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border: 2px solid black;
+    display: inline-block;
+  }
+  p {
+    padding-top: 50px;
+  }
+  img {
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: -50px;
+    left: 100px;
+  }
+</style>

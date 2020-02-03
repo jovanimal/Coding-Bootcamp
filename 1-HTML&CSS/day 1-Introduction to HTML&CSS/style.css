@@ -1,0 +1,58 @@
+body {
+  background-color: lightgray;
+  font-family: "Solway", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #3a3a3a;
+}
+
+.section-nav {
+  list-style: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+.section-nav li {
+  display: inline-block;
+  margin: 40px;
+}
+
+.section-nav a {
+  color: white;
+  font-size: 20px;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.section-text {
+  border: dashed;
+  margin: 30px 250px;
+  line-height: 50px;
+}
+
+h2:first-letter {
+  font-size: 40px;
+}
+
+footer {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: orange;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: orange;
+}

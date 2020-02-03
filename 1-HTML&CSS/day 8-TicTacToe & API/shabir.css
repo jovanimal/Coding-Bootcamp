@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.board {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: navajowhite;
+  padding: 10px;
+  height: 400px;
+  width: 400px;
+}
+.box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: auto;
+  font-size: 30px;
+  text-align: center;
+}
+#board div {
+    float: left;
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    margin: 3px;
+    font-size: 3em;
+    text-align: center;
+    line-height: 120px;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+}

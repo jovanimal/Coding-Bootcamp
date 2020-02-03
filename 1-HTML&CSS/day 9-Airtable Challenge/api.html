@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <title>Array to DOM Practice</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      width: 300px;
+      border: solid 1px #cecccc;
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      padding: 10px 15px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>List of Programming Languages</h1>
+
+  <div id="container"></div>
+  <script>
+    const DATA = [
+      {
+        language: 'C#',
+        description: `C# (pronounced "C-sharp") is an object-oriented programming language from Microsoft that aims to combine the computing power of C++ with the programming ease of Visual Basic. C# is designed to work with Microsoft's . Net platform.`,
+        imgUrl: 'http://cortal-prod.s3.amazonaws.com/c.png'
+      },
+      {
+        language: 'Dart',
+        description:
+          'Dart is an object-oriented, class defined, garbage-collected language using a C-style syntax that transcompiles optionally into JavaScript. It is used to code Flutter mobile apps.',
+        imgUrl: 'http://cortal-prod.s3.amazonaws.com/dart.png'
+      },
+      {
+        language: 'Go',
+        description:
+          'Go, also known as Golang, is a statically typed, compiled programming language designed at Google. Go is syntactically similar to C, but with memory safety, garbage collection and is designed for scale.',
+        imgUrl: 'http://cortal-prod.s3.amazonaws.com/golang.png'
+      },
+      {
+        language: 'Java',
+        description: 'Java is a high-level programming language developed by Sun Microsystems. It was originally designed for developing programs for set-top boxes and handheld devices, but later became a popular choice for creating web applications.',
+        imgUrl: 'http://cortal-prod.s3.amazonaws.com/java.png'
+      },
+      {
+        language: 'Javascript',
+        description:
+          'JS is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages.',
+        imgUrl: 'http://cortal-prod.s3.amazonaws.com/js.png'
+      },
+      {
+        language: 'Python',
+        description: `Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse.`,
+        imgUrl: 'http://cortal-prod.s3.amazonaws.com/python.png'
+      }
+    ]
+    const container = document.getElementById('container')
+    /** 
+      * finish the rest of the code to
+      * turn each object inside the DATA
+      * array into a HTML card:
+
+          <div class="card">
+            <img src="IMAGE URL" />
+            <div class="card-body">
+              <h3 class="title">LANGUAGE NAME</h4>
+              <p>LANGUAGE DESCRIPTION</p>
+            </div>
+          </div>
+    */
+    DATA.forEach(item => {
+      let newElement = document.createElement("div");
+      newElement.innerHTML = 
+        `<div class="card">
+          <img src="${item.imgUrl}" />
+          <div class="card-body">
+            <h3 class="title">${item.language}</h3>
+            <p>${item.description}</p>
+          </div>
+        </div>`
+      container.append(newElement);
+    })
+
+
+  </script>
+</body>
+
+</html>
