@@ -8,7 +8,7 @@
 [__************** 2020 Objectives **************__]
 
 ----------------------------------------------------------
-To fast track my learning by building projects and eventually get into a full time tech role.
+To fast track my learning by joining coding boot camp, building projects and eventually get into a full time tech role.
 
 ----------------------------------------------------------
 
@@ -19,6 +19,23 @@ To fast track my learning by building projects and eventually get into a full ti
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Tue 4 Feb 20
+Second day into building Nextgram. Today we learn about React Router. 
+
+1. Install react router ( npm install --save react-router-dom )
+2. import { BrowserRouter } from 'react-router-dom'
+3. In index.js
+```
+ReactDOM.render(
+  <BrowserRouter><App /></BrowserRouter>,
+  document.getElementById('root')
+)
+```
+```<Route>``` defines what component to render at certain path.
+
+```<Link>``` is a helper component that automatically creates <a> tag for you.
+    
+
 ## Mon 3 Feb 20
 First day into building Nextgram. First we fetch Nextgram API by using axios in React. We use a library called Axios to make the API call process easier, the call looks very similar to Fetch, but less wordy.
 ```
