@@ -19,6 +19,76 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Thu 6 Feb 20
+## Wed 5 Feb 20
+I love today's lesson! Today we learn how to create a React form (Login and Signup form) and React To-Do List. 
+
+Important things to note: Always use Controlled Form. In a controlled form component, we make sure everything goes through state.
+
+In React, there is virtual DOM and real DOM. Whenever there is a state change or change in the props, React only updates the virtual DOM. The virtual DOM will then compare its differences with real DOM and only update the differences, making the whole process lightning fast.
+
+Steps in React Form
+1. First we create a Modal component (accessible from navbar), which can be toggled between Login and Sign up component.
+```
+const AuthModal = ({ buttonLabel }) => {
+  const [modal, setModal] = useState(false);
+  const [showLogin, setShowLogin] = useState(true);
+
+  const toggle = () => {
+    setModal(!modal);
+    setShowLogin(true);
+  };
+
+  const toggleLogin = () => setShowLogin(!showLogin);
+
+  return (
+    <div>
+      <NavLink style={{ cursor: "pointer" }} onClick={toggle}>
+        {buttonLabel}
+      </NavLink>
+      <Modal isOpen={modal} toggle={toggle}>
+        <ModalHeader toggle={toggle}>
+          {showLogin ? "Login" : "Sign Up"}
+        </ModalHeader>
+        <ModalBody>{showLogin ? <LoginForm /> : <SignUpForm />}</ModalBody>
+        <ModalFooter>
+          <Button color="link" onClick={toggleLogin}>
+            {showLogin
+              ? "Not registered? Sign Up Now"
+              : "Already a user? Sign In"}
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+```
+2. Then we create 2 components for each Login and Signup form. Always remember to use State for every variables (e.g. email, password, username etc).
+An extract of the code:
+```
+const LoginForm = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  
+  return (
+    <>
+      <Form onSubmit={handleSubmit}>
+        <FormGroup>
+          <Label>Email Address</Label>
+          <Input
+            type="text"
+            placeholder="Enter email..."
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
+        </FormGroup>
+        </Form>
+    </>
+  );
+}
+```
+
+
 ## Tue 4 Feb 20
 Second day into building Nextgram. Today we learn about React Router. 
 
