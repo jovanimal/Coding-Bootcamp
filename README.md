@@ -20,6 +20,26 @@ To build up my foundation in front end web development, particularly Javascript 
 
 ----------------------------------------------------------
 ## Thu 6 Feb 20
+Today we learn how to consume Sign Up API endpoint and to use React Toastify to prompt user when they have logged in or signed up successfully.
+```
+npm install --save react-toastify
+
+import { ToastContainer } from 'react-toastify'; // in App.js
+import "react-toastify/dist/ReactToastify.min.css"; // in index.js
+```
+
+The next interesting one is incorporating Validation in the Log In and Sign Up forms.
+Example: If the password does not meet the minimum requirements of being at least 6 characters long, display to the user that the password is too short.
+
+Next: JWT (JSON Web Token).
+In order to obtain JWT, users need to login through your React app - making POST request to /login will return JWT if the email-password combination is correct. Then we can either store the JWT in local storage or session storage. We can simply write data into the storage:
+```
+localStorage.setItem('name', 'Josh')
+
+// or read from them
+localStorage.getItem('name') // "Josh"
+```
+
 ## Wed 5 Feb 20
 I love today's lesson! Today we learn how to create a React form (Login and Signup form) and React To-Do List. 
 
