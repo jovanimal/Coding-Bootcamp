@@ -19,6 +19,56 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Fri 7 Feb 20
+Today we work on building "My Profile Page" that you will be led to once you've logged in. It's astonishing to see how conditional ternary operator is being used, for exanple, one of the requirements is - Upon logging out, you should trigger a re-render to update the UI so that user knows he/she is logged out.
+
+Note to self: We should always thinking of creating a new state to be used as a variable.
+
+```
+const [currentUser, setCurrentUser] = useState(null); // in App.js
+
+// in NavBar.js
+return (
+  <div>
+    {currentUser ? (
+      <NavItem className="mr-5">
+        <NavbarText>Hello, {currentUser.username}</NavbarText>
+      </NavItem>
+    ) : (
+      ""
+    )}
+  )
+    
+```
+Next, we call an API endpoint after logging in and returning us our own profile page, however this API request requires a authorization header with JWT token. This is because every single user has an unique JWT and it has to match with the server to fetch the API. Then we return all our uploaded images (using mapping) under our profile page.
+```
+  const [images, setImages] = useState([])
+
+  useEffect(() => {
+    axios({
+      method: "get",
+      url: "https://insta.nextacademy.com/api/v1/images/me",
+      headers: { Authorization: `Bearer ${localStorage.getItem("jwt")}` }
+    }).then(result => {
+      setImages(result.data)
+    });
+  }, []);
+  
+  return (
+    <>
+    {images.map( image => {
+      return (
+        <div>
+          <Image
+            src={image}
+          />
+        </div>
+      );
+    })}
+    </>
+  )
+```
+
 ## Thu 6 Feb 20
 Today we learn how to consume Sign Up API endpoint and to use React Toastify to prompt user when they have logged in or signed up successfully.
 ```
