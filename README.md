@@ -19,6 +19,18 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Mon 10 Feb 20
+Today we learn how to create a new component UploadImage.js, which handle the function of uploading images. First we create a form and the difference here is, set input `type="file"` and use e.target.file to get access to the image. Then we can use `setImageFile(e.target.files[0])` so that we can hold onto it and use it later when we submit the form to the server.
+
+To be able to show the preview image, we can use a built-in JS function that generates a URL from the uploaded image file 
+```
+setPreviewImage(URL.createObjectURL(e.target.files[0]))
+setImageFile(e.target.files[0])
+```
+We generate a URL using the URL.createObjectURL() function and we pass in the file we want to generate the URL for. By adding this to the state, we are now able to see the image to be uploaded previewed in the container that we just created.
+
+Lastly, we learn how to deploy our site to netlify and `npm run build`.
+
 ## Fri 7 Feb 20
 Today we work on building "My Profile Page" that you will be led to once you've logged in. It's astonishing to see how conditional ternary operator is being used, for exanple, one of the requirements is - Upon logging out, you should trigger a re-render to update the UI so that user knows he/she is logged out.
 
