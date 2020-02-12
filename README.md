@@ -19,6 +19,13 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Wed 12 Feb 20
+
+## Tue 11 Feb 20
+Last day of React ! Time flies. It has been a month in this bootcamp and honestly, I am quite satisfied with the overall progress. I didn't carry much expectation when I first decided to join, but along the way I've made friends and learned exciting stuff that's really value adding. Before I join the bootcamp, I take the bootcamp as a starting point to embark on a developer path, acknowledging that I have to put in the hours first before everything else, more of I treat it as an end in itself.
+
+Thoughts aside, we learn how to build a chatroom today using socket.io `npm install --save socket.io-client`. We have a brief understanding on React Native too, though there are lots of sayings (pros & cons) on the usage of React Native, I have yet to figure it out on my own, and will do so in the near future.
+
 ## Mon 10 Feb 20
 Today we learn how to create a new component UploadImage.js, which handle the function of uploading images. First we create a form and the difference here is, set input `type="file"` and use e.target.file to get access to the image. Then we can use `setImageFile(e.target.files[0])` so that we can hold onto it and use it later when we submit the form to the server.
 
