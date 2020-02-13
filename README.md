@@ -19,7 +19,21 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+# Thu 13 Feb 20
+
 ## Wed 12 Feb 20
+First day of Back End Web Development. Setting up python, install Anaconda and go through the introduction of Python 101 & 102. It's great to see the difference between Python and Javascript, since I have way more experience in Javascript. Perhaps my first impression of the well known high-level programming language, Phython in this case, is true. The syntax is relatively short and we can write a lot of one liner code compared to Javascript. Example:
+```
+word_list = ['Java', 'Golang', 'Python', 'JavaScript']
+# Instead of writing:
+# words = []
+# for word in word_list:
+#     if len(word) > 5:
+#         words.append(word)
+
+words = [ word for word in word_list if len(word) > 5]
+print(words) // return ['Golang', 'Python', 'JavaScript']
+```
 
 ## Tue 11 Feb 20
 Last day of React ! Time flies. It has been a month in this bootcamp and honestly, I am quite satisfied with the overall progress. I didn't carry much expectation when I first decided to join, but along the way I've made friends and learned exciting stuff that's really value adding. Before I join the bootcamp, I take the bootcamp as a starting point to embark on a developer path, acknowledging that I have to put in the hours first before everything else, more of I treat it as an end in itself.
