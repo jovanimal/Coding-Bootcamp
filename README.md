@@ -25,8 +25,8 @@ Second day into Python. We go through function, scopes and many other challenges
 The final assignment is a TicTacToe vs Computer. We need to write the algorithm for the computer to play with us. The steps are:
 1. Check if we (as computer) can win in the next move.
 2. Check if the player could win on their next move, and block them.
-3. Try to take one of the corners, if they are free.
-4. Try to take the center, if it is free.
+3. Try to take one of the corners, if they are empty.
+4. Try to take the center, if it is empty.
 5. Move on one of the sides.
 
 Kindly note that the steps above are ranked top to bottom, as it takes precedence over another.
