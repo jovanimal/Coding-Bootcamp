@@ -19,6 +19,17 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Fri 14 Feb 20
+Python third day: Recursion, Regular Expression & building Boggle Board. Today we mainly spend time working on challenges on all topics, researching and discussing with others. Regular expression is really an interesting one, I can see how powerful it is when you want to look for any string or text that matches a specific pattern.
+
+[Regular Expression Documentation & Challenges](https://regexone.com/references/python)
+
+[Phythex](https://pythex.org/)
+
+I found this [Regex cheatsheet](https://www.debuggex.com/cheatsheet/regex/python) and it is really useful!
+
+Ohh crap, I have a Valentines dinner to catch up !
+
 ## Thu 13 Feb 20
 Second day into Python. We go through function, scopes and many other challenges. The second half of the day we are assigned into team of 3 and build TicTacToe, again ! This is the third time tictactoc after using plain vanilla Javascript, React and now Python. I can see how useful it is to build a TicTacToc as it involves a lot of logics and presentation and the same time. One of the best way to get started and understand the language.
 
