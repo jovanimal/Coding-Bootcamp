@@ -19,6 +19,24 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Mon 17 Feb 20
+Named Arguments in python and Object Oreiented Programming (OOP). OOP helps us organise our code better and make our code repeatable thus saving our time. A Class template looks like this:
+```
+class Dog():
+    species = 'mammals' # class attribute; same for all instances of the class
+
+    def __init__(self, breed, name):
+        self.breed = breed
+        self.name = name
+
+daisy = Dog('Shih Tzu', 'Daisy')
+
+print(daisy.name) // 'Daisy'
+print(daisy.breed) // 'Shih Tze'
+print(daisy.species) // 'mammals'
+```
+We spend most of the time doing challenges today!
+
 ## Fri 14 Feb 20
 Python third day: Recursion, Regular Expression & building Boggle Board. Today we mainly spend time working on challenges on all topics, researching and discussing with others. Regular expression is really an interesting one, I can see how powerful it is when you want to look for any string or text that matches a specific pattern.
 
