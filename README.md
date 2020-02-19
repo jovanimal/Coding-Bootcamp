@@ -19,6 +19,35 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Tue 18 Feb 20
+We went through Pypi, PIP, modules, packages, special variables, function decorator. PyPi is an online repository of published open sourced libraries. However, decorator is a useful one.
+
+Let's say you have a function and you want to extend the functionality of it. You have 2 options
+1. Modify the code in the function
+2. Write a new function and call the function within you original function
+However, when you want to add/remove the functionalities frequently, it gets complicated.
+You could also have similar logic shared across multiple functions using decorators! Writing code just once.
+
+```
+def some_decorator(my_func): # this is a decorator function
+   
+    def wrap_func():
+        print("Execute this first before my_func") # do something first
+        my_func() # execute the original function
+        print("Execute this after my_func") # do something after
+
+    return wrap_func # decorator functions always return a function without calling it e.g. `wrap_func()`
+
+def my_function():
+    print("Hello World")
+
+@some_decorator # adds functionality to `my_function`
+def my_function():
+    print("Hello World")                                // is equivalent to my_function = some_decorator(my_function)
+    
+my_function()
+```
+
 ## Mon 17 Feb 20
 Named Arguments in python and Object Oreiented Programming (OOP). OOP helps us organise our code better and make our code repeatable thus saving our time. A Class template looks like this:
 ```
