@@ -10,6 +10,8 @@
 ----------------------------------------------------------
 To fast track my learning by joining coding boot camp, building projects and eventually get into a full time tech role.
 
+Most importantly, be a constant learner, taking up new challenges and open to learning new technologies/frameworks.
+
 ----------------------------------------------------------
 
 
@@ -19,6 +21,21 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Thu 20 Feb 20
+Into Structured Query Language (SQL) today. Why is it important? Because we need to access the database to get meaningful information.It could be for analytics, to cross check our data input AND most importantly, we need to know how to query to eventually determine what information to show on our web app based on who is using it.
+
+It is interesting when going through the [SQL challenges](https://sqlzoo.net/wiki/SQL_Tutorial) and you can imagine the potential of SQL in looking up data in a database. However, it can get really confusing at times. We were having a hard time (including the mentors) in this question and the answer looks like this:
+```
+SELECT vt.first_name, vt.last_name, vt.party, vt.gender, cm.name FROM voters vt
+JOIN votes v ON v.voter_id = vt.id
+JOIN congress_members cm ON cm.id=v.politician_id
+WHERE  politician_id=(SELECT politician_id from votes
+JOIN congress_members ON politician_id=congress_members.id
+GROUP BY name
+ORDER BY COUNT(name) DESC LIMIT 1)
+```
+Useful documentation: [SQLite Tutorial](http://zetcode.com/db/sqlite/)
+
 ## Wed 19 Feb 20
 Today we learn about Schema and its relationships. There are 3 types of relationship:
 1. One to one
