@@ -36,6 +36,16 @@ ORDER BY COUNT(name) DESC LIMIT 1)
 ```
 Useful documentation: [SQLite Tutorial](http://zetcode.com/db/sqlite/)
 
+IMPORTANT: SQL order to follow:
+```
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);
+```
+
 ## Wed 19 Feb 20
 Today we learn about Schema and its relationships. There are 3 types of relationship:
 1. One to one
