@@ -19,6 +19,16 @@ To fast track my learning by joining coding boot camp, building projects and eve
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Wed 19 Feb 20
+Today we learn about Schema and its relationships. There are 3 types of relationship:
+1. One to one
+2. one to many
+3. Many to many
+
+Many-to-many relationships are relatively easy to understand, but slightly more complicated to implement. For example, an author can write many books, and a book can be written by many authors. We model this relationship by creating a joint table.
+
+The second half of the day we focus on Schema challenges and started earlier on SQL which originally supposed to be taught on the next day.
+
 ## Tue 18 Feb 20
 We went through Pypi, PIP, modules, packages, special variables, function decorator. PyPi is an online repository of published open sourced libraries. However, decorator is a useful one.
 
