@@ -21,6 +21,31 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Fri 21 Feb 20
+Peewee and PostgreSQL. This section has plenty of documentations/articles that I have yet to read, will read it during the weekends or at night. We learned how to use Postbird and PostgreSQL to replace SQLite. Steps to create a table in python REPL command line: 
+```
+from orm_practice import *
+
+db.connect()
+db.create_tables([Store, Product, Warehouse])
+# This is how you create an entry to database
+# create an instance of Store
+meng_store = Store(name="Meng's Camera Store")
+
+# save it to database with the following line of code
+meng_store.save()
+
+warehouse_one = Warehouse(location="5 Jalan Damansara", store=meng_store)
+warehouse_one.save()
+
+warehouse_two = Warehouse(location="5 Jalan Cempaka", store=meng_store)
+warehouse_two.save()
+
+sony_rx100 = Product(
+   name="Sony RX100", description="Sony compact camera", warehouse=warehouse_two)
+sony_rx100.save()
+```
+
 ## Thu 20 Feb 20
 Into Structured Query Language (SQL) today. Why is it important? Because we need to access the database to get meaningful information.It could be for analytics, to cross check our data input AND most importantly, we need to know how to query to eventually determine what information to show on our web app based on who is using it.
 
