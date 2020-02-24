@@ -22,7 +22,11 @@ To build up my foundation in front end web development, particularly Javascript 
 
 ----------------------------------------------------------
 ## Fri 21 Feb 20
-Peewee and PostgreSQL. This section has plenty of documentations/articles that I have yet to read, will read it during the weekends or at night. We learned how to use Postbird and PostgreSQL to replace SQLite. Steps to create a table in python REPL command line: 
+Peewee and PostgreSQL. This section has plenty of documentations/articles that I have yet to read, will read it during the weekends or at night. We learned how to use Postbird and PostgreSQL to replace SQLite. 
+
+Important note: Everytime we `pip install <package_name>`, we should also `pip freeze > requirements.txt`
+
+Steps to create a table in python REPL command line: 
 ```
 from orm_practice import *
 
