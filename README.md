@@ -21,6 +21,39 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Mon 24 Feb 20
+Today we started Flask, a micro web framework written in Python. Everytime we `pip install <package_name>`, we should also `pip freeze > requirements.txt`.
+
+What if we want to retrieve some data from the database to be displayed to the user? We can pass down variables like below: 
+```
+// in app
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route("/<name>")
+def index(name):
+    name = name.upper()
+    return render_template('index.html', name=name)
+
+if __name__ == '__main__':
+    app.run()
+```
+```
+// in index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Hello, {{name}}!</h1>
+  <img src="../static/hello.jpg" />
+</body>
+</html>
+```
+
 ## Fri 21 Feb 20
 Peewee and PostgreSQL. This section has plenty of documentations/articles that I have yet to read, will read it during the weekends or at night. We learned how to use Postbird and PostgreSQL to replace SQLite. 
 
