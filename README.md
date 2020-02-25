@@ -21,6 +21,20 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Tue 25 Feb 20
+Second day into Flask. Today is a challenging one compared to the previous day! We created an inventory management where we can create, update and delete the product/warehouse.
+
+Note: Here are the 7 typical routes for RESTFUL convention:
+|Purpose	    |View Function	|HTTP Verb	|Route|
+|:---:|:------------------|-------------|--------|
+|load a form to create resource	|new()|	GET|	/resources/new|
+|create resource	|create()|	POST|	/resources/|
+|view all resources	|index()|	GET|	/resources/|
+|view a particular resource	|show()|	GET	|/resources/:id|
+|load form to edit a particular resource	|edit()|	GET|	/resources/:id/edit|
+|edit a particular resource	|update()|	POST|	/resources/:id|
+|delete a particular resource	|destroy()|	POST	|/resources/:id/delete|
+
 ## Mon 24 Feb 20
 Today we started Flask, a micro web framework written in Python. Everytime we `pip install <package_name>`, we should also `pip freeze > requirements.txt`.
 
