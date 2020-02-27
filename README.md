@@ -21,6 +21,22 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Wed 26 Feb 20
+Back to Nextagram again ! This time, we focus on the backend by using Flask and PostgreSQL. For the next 2 weeks, we will be implementing features such as:
+
+1. user sign up (encrypting passwords)
+2. user sign in (authentication, authorization, cookies and sessions)
+3. sign in via Google (OAuth)
+4. image uploading (using Amazon S3) *let us know early if you don't have a credit card
+5. sending emails (consuming external APIs)
+6. collecting payments via credit card (integrating payment gateways)
+7. complex model relationships (self-referential many-to-many)
+8. RESTFUL endpoints (exposing APIs for other apps to consume)
+
+Today we focus on the user sign up page where we use POST method to store the input (username, email & password) the user keys in to the database, implementing features such as form validation, password hashing & password constraints etc.
+
+And Yes, the learning curve is steep !
+
 ## Tue 25 Feb 20
 Second day into Flask. Today is a challenging one compared to the previous day! We created an inventory management where we can create, update and delete the product/warehouse.
 
