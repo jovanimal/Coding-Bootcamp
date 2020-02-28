@@ -21,6 +21,31 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Thu 27 Feb 20
+Today we focus on building the login page where users can successfully sign in and store the session using the package `pip install flask-login` and error page when the user information is incorrect.
+
+Steps for flask-login:
+```
+// in __init__py
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+@login_manager.user_loader
+def load_user(user_id):
+    from models.user import User
+    return User.get_or_none(User.id == user_id)
+
+```
+Documentation: [Flask-login](https://flask-login.readthedocs.io/en/latest/)
+
+Insert handling error function into __init__py:
+```
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+```
+Documentation: [Error Pages](https://flask.palletsprojects.com/en/1.0.x/patterns/errorpages/)
+
 ## Wed 26 Feb 20
 Back to Nextagram again ! This time, we focus on the backend by using Flask and PostgreSQL. For the next 2 weeks, we will be implementing features such as:
 
