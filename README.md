@@ -21,6 +21,12 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Fri 28 Feb 20
+Today we work on building an edit page where user can edit their profile and upload their profile image. We also learn how to use Amazon S3 to store our images.
+
+[How to upload image to Amazon S3 via Flask]( https://www.zabana.me/notes/flask-tutorial-upload-files-amazon-s3)
+[Hybrid Property](http://docs.peewee-orm.com/en/latest/peewee/playhouse.html#hybrid)
+
 ## Thu 27 Feb 20
 Today we focus on building the login page where users can successfully sign in and store the session using the package `pip install flask-login` and error page when the user information is incorrect.
 
