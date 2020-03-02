@@ -25,6 +25,7 @@ To build up my foundation in front end web development, particularly Javascript 
 Today we work on building an edit page where user can edit their profile and upload their profile image. We also learn how to use Amazon S3 to store our images.
 
 [How to upload image to Amazon S3 via Flask]( https://www.zabana.me/notes/flask-tutorial-upload-files-amazon-s3)
+
 [Hybrid Property](http://docs.peewee-orm.com/en/latest/peewee/playhouse.html#hybrid)
 
 ## Thu 27 Feb 20
