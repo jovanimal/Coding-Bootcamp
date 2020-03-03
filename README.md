@@ -21,6 +21,43 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Tue 3 Mar 20
+
+## Mon 2 Mar 20
+Today we focus on implementing user images uploading feature where previously we had successfully handled the profile picture function. It's more or less the same steps we used on Friday. We have no lectures today and most of the time we spend is on discussion with other group members or seek for help from mentors if we get stuck for too long.
+
+```
+// upload function in views.py
+
+@sessions_blueprint.route('/upload/images', methods=['POST'])
+@login_required
+def upload_images():
+    if "user_image" not in request.files:
+        flash('No image has been provided', 'warning')
+        return redirect(url_for('session.new'))
+
+    file = request.files.get("user_image")
+    caption = request.form.get("caption")
+
+    file.filename = secure_filename(file.filename)
+
+    if not upload_file_to_s3(file):
+        flash('Oops, something went wrong while uploading', 'warning')
+        return redirect(url_for('sessions.new'))
+
+    user = User.get_or_none(User.id == current_user.id)
+
+    img_upload = Image(user=user.id, user_image=file.filename, caption=caption)
+
+    img_upload.save()
+
+    flash('Successfully uploaded Image', 'success')
+    return redirect(url_for('sessions.new'))
+
+```
+
+[N+1 Query Problem](http://docs.peewee-orm.com/en/latest/peewee/relationships.html#nplusone)
+
 ## Fri 28 Feb 20
 Today we work on building an edit page where user can edit their profile and upload their profile image. We also learn how to use Amazon S3 to store our images.
 
