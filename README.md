@@ -22,6 +22,11 @@ To build up my foundation in front end web development, particularly Javascript 
 
 ----------------------------------------------------------
 ## Tue 3 Mar 20
+Today we work on setting up a payment gateway for image donation by other users. We should store their donation record in database once payment is successful. It would be good to record how much they donated, for which image and donated by whom. We use Braintree as our credit card processor. Braintree is one of the most renown payment gateway in the world.
+
+[Braintree Documentation](https://developers.braintreepayments.com/start/overview)
+
+We will need to set up a new model, Donation and migrate it to the database. Undestanding the workflow of the payment gateway is extremely important. While reading the documentation, client refers to our frontend (templates) and server refers to our backend (views, models etc+). We need to use both the client and server SDKs.
 
 ## Mon 2 Mar 20
 Today we focus on implementing user images uploading feature where previously we had successfully handled the profile picture function. It's more or less the same steps we used on Friday. We have no lectures today and most of the time we spend is on discussion with other group members or seek for help from mentors if we get stuck for too long.
