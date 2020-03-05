@@ -1,4 +1,4 @@
-# Next-Academy-Bootcamp Learning Log
+# Next Academy Bootcamp Learning Log
 
 |Date |          January - March 2020                              |
 |:---:|:---------------------------------------|
@@ -21,6 +21,19 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Wed 4 Mar 20
+Today we focus on implementing the Google Oauth sign in feature so the users can sign in via Google account. Our approach for this bootcamp is to use a user's Google email to match with his/her account on our app (in other words, when a user clicks sign in via Google on our app, we will try to find a matching email address and sign them in).
+
+[OAuth 2.0 Google](https://developers.google.com/identity/protocols/OAuth2)
+
+### Terminologies
+|Term|Explanation	|
+|:---:|:------------------|
+|OAuth Client|Our app|
+|OAuth Server|Google, Facebook, Twitter, Github and more (we could also make our app an OAuth server to allow other developers to build apps that allows their users to sign in via our app (different meaning from OAuth server; server don't refer to the same thing here)|
+|Server side |	We are using server side authentication with Google rather than client side|
+|Client side	|Client side means frontend (different meaning from OAuth client; client don't refer to the same thing here)|
+
 ## Tue 3 Mar 20
 Today we work on setting up a payment gateway for image donation by other users. We should store their donation record in database once payment is successful. It would be good to record how much they donated, for which image and donated by whom. We use Braintree as our credit card processor. Braintree is one of the most renown payment gateway in the world.
 
