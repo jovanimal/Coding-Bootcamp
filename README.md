@@ -21,6 +21,31 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Fri 6 Mar 20
+
+## Thu 5 Mar 20
+Today's mission is a faily challenging one. The two main features are:
+1. User can follow other users
+2. User can see feed of images from users they are following
+
+We have to implement a self-referential Many-to-Many relationship to and from the same table. We need to create a new model for this: 
+```
+from models.base_model import BaseModel
+from models.user import User
+import peewee as pw
+
+
+class Following(BaseModel):
+    fan = pw.ForeignKeyField(User, backref="idols")
+    idol = pw.ForeignKeyField(User, backref="fans")
+```
+Always remember to register blueprint in __init__ whenever you created a new model.
+```
+from instagram_web.blueprints.follows.views import follows_blueprint
+
+app.register_blueprint(follows_blueprint, url_prefix="/follows")
+```
+
 ## Wed 4 Mar 20
 Today we focus on implementing the Google Oauth sign in feature so the users can sign in via Google account. Our approach for this bootcamp is to use a user's Google email to match with his/her account on our app (in other words, when a user clicks sign in via Google on our app, we will try to find a matching email address and sign them in).
 
