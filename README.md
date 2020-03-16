@@ -21,7 +21,11 @@ Most importantly, be a constant learner, taking up new challenges and open to le
 To build up my foundation in front end web development, particularly Javascript and JS frameworks.
 
 ----------------------------------------------------------
+## Mon 9 Mar 20 - 24 Tue Mar 20
+2-week team project started! 
+
 ## Fri 6 Mar 20
+An exciting day ! Today is the day where we were assigned to groups, and given a theme of Hacking HEALTH ! Basically we have to build an app relating to the term 'Health'. It's indeed nervous when the mentors are announcing our teams. Next Monday, we have to present our ideas to the Next Academy marketing team, and seek their input.
 
 ## Thu 5 Mar 20
 Today's mission is a faily challenging one. The two main features are:
