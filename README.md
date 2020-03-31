@@ -10,7 +10,7 @@
 ----------------------------------------------------------
 To fast track my learning by joining coding boot camp, building projects and eventually get into a full time tech role.
 
-Most importantly, be a constant learner, taking up new challenges and open to learning new technologies/frameworks.
+Most importantly, be a constant learner, taking up new challenges and open to learning new technologies/frameworks while also remember that we can't master every tech stacks. Define your goals and know WHAT to overlook, apart from what to focus on.
 
 ----------------------------------------------------------
 
