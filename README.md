@@ -24,6 +24,8 @@ To build up my foundation in front end web development, particularly Javascript 
 ## Mon 9 Mar 20 - 24 Tue Mar 20
 2-week team project started! 
 
+Update: Project delay due to Movement Control Order implemented by goverment starting on 18 March 2020. Everybody stay at home! 
+
 ## Fri 6 Mar 20
 An exciting day ! Today is the day where we were assigned to groups, and given a theme of Hacking HEALTH ! Basically we have to build an app relating to the term 'Health'. It's indeed nervous when the mentors are announcing our teams. Next Monday, we have to present our ideas to the Next Academy marketing team, and seek their input.
 
